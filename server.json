@@ -2,7 +2,7 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.GSterlingPress/mailtype",
   "title": "MAILTYPE — Email Domain Capability Intelligence",
-  "description": "Inspect email-domain infrastructure before accepting or acting on an address: domain existence, explicit MX capability, provider evidence, disposable-domain evidence, SPF, DMARC, MTA-STS, confidence, and timestamp.",
+  "description": "Email-domain intelligence: MX capability, provider, disposable status, SPF, DMARC, and MTA-STS.",
   "version": "1.0.0",
   "websiteUrl": "https://mailtype-api.onrender.com/docs",
   "repository": {
