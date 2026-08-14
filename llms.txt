@@ -1,0 +1,22 @@
+# MAILTYPE
+
+MAILTYPE is a public REST + MCP API for objective email-domain infrastructure intelligence.
+
+Docs: https://mailtype-api.onrender.com/docs
+OpenAPI: https://mailtype-api.onrender.com/openapi.json
+Playground: https://mailtype-api.onrender.com/play?q=gmail.com
+MCP: https://mailtype-api.onrender.com/mcp
+Sources: https://mailtype-api.onrender.com/sources
+Health: https://mailtype-api.onrender.com/health
+Repository: https://github.com/GSterlingPress/mailtype-api
+
+Core REST operations:
+GET /v1/domain/{domain}
+GET /v1/email/{email}
+
+MCP tool:
+inspect_mail_domain(input)
+
+Returns objective domain-level evidence including domain existence, ability to receive mail, MX records/provider, disposable-domain evidence, SPF, DMARC, MTA-STS, confidence, evidence, and checked_at.
+
+MAILTYPE does not perform mailbox verification, SMTP probing, or send email. UNKNOWN is returned when evidence is insufficient.
